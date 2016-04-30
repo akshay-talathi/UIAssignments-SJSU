@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<meta name="author" content="Akshay Talathi">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<script src= "check.js"></script>
+
+<title>Signup Page</title>
+<link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+
+  <div class= "form">
+
+  <p><center>
+      <h2>Signup Page </h2>
+    </p>
+    </center>
+    <section>
+      <form id="form2" onsubmit="submitRegistrationForm();">
+      <table align="center" id= "MainTable">
+        <tr></tr> 
+        <tr>
+          <td align="right">
+            User Name: </td>
+            <td> <input type="text" id="userid" name="username" placeholder="Enter User Name" required="" autofocus/> <br /> </td>
+        </tr>     
+       
+        <tr>
+          <td align="right"> Password: <a target="_blank" title="Password must contain upper case letter, lower case letter, number and special chars"><img src="question_marks.png" height="13px"/></a></td>
+          <td> 
+            <input type="Password" id="password" name="password" onchange="calculateStrength()" placeholder="Password" required=""/> 
+          </td>
+
+          <td>
+            <progress id="progressBar" value="0" max=100 style: "width:100%"><span>0</span>%</progress>
+          </td> 
+
+          <td>
+            <span id="span1"></span>
+          </td> 
+        </tr>
+   
+        
+        <tr>
+          <td align="right">
+            Verify Password: </td>
+          <td> <input type="Password" id="verifypassword" name="verifypassword" onfocusout="PasswordCheck()" placeholder="Confirm Password" 
+            required /> 
+                      <td>
+            <span id="span3"></span>
+          </td> 
+
+          
+          </td>
+          <td>
+            <img id= 'img1' height='20' width='20' style="display:none" src='match.png'>
+          </td>
+        </tr> 
+      
+
+
+   
+
+        <tr>
+          <td align="right">
+            Email: </td>
+          <td> <input type="email" id="email_addr" name="email_addr" placeholder="Email Address" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/> 
+            <br /> 
+          </td> 
+  
+        </tr>
+
+        </tr>
+
+  
+        <tr>
+          <td align="right">
+            Verify Email: 
+          </td>
+          <td> <input type="email" id="vemail_addr" name="vemail_addr" onfocusout="verifyEmail()" placeholder="Confirm Email" required /> </td>
+          <td>
+            <span id="span2"></span>
+          </td> 
+          <td>
+            <img id= 'img2' height='20' width='20' style="display:none" src='match.png'>
+          </td>
+          
+        </tr>
+   
+            <tr>
+          <td align= "right"> Date of Birth: </td>
+          <td> <input type="date" id="birthDate" name= "birthDate" name="bday" required> </td>
+
+        </tr>
+
+
+        <tr>
+          <td align="right">
+            Mobile Number:  </td>
+          <td> <input type="number" id="mobile" placeholder="xxx xxx-xxxx" maxlength = "10" pattern= "[0-9]{10}"></td> 
+          <br>
+        </tr>
+
+
+        <tr>
+          <td align="right">
+            Security Question 1: </td>
+          <td>
+            <label>
+                  
+                     <select id="question1" style="width:350px;" >
+                          <option value= "1">Sum of 2 + 3 = </option>
+                          <option value="2">Sum of 100 + 200 = </option>
+                          <option value="3">23 x 100 = </option>
+                          <option value="4">Capital of India?</option>
+                          <option value="5">Capital of USA?</option>
+                          </select>
+            </label>
+          </td> 
+
+        </tr> 
+        
+     
+        <tr>
+          <td align="right">
+            Security Answer 1: </td>
+          <td> <input type="text" id="answer1" name="answer1"  placeholder="Answer 1" required /> <br /> </td>
+
+        </tr> 
+
+        <tr>
+          <td align="right">
+            Security Question 2: </td>
+          <td>
+            <label>
+                <select id="question2" style="width:350px;" >
+                          <option value= "1">Sum of 2 + 3 = </option>
+                          <option value="2">Sum of 100 + 200 = </option>
+                          <option value="3">23 x 100 = </option>
+                          <option value="4">Capital of India?</option>
+                          <option value="5">Capital of USA?</option>
+                          </select>
+                    </datalist>
+            </label>
+          </td> 
+
+        </tr> 
+ 
+
+        <tr>
+          <td align="right">
+            Security Answer 2: </td>
+          <td> <input type="text" id="answer2" name="answer2"  placeholder="Answer 2"  required /> <br /> </td>
+
+        </tr>
+ 
+
+        <tr>
+          <td align="right">
+            Address: </td>      
+
+            <td>
+            <input type="text" id="addressline1" name="address"  placeholder="Address"  required /></td>
+        </tr>
+
+    
+
+        
+       
+          <td>
+            
+             <button class = "btn btn-danger" type="submit" id="button" form="form2" value="Register">
+                      <b>Register</b>
+              </button>
+                 <button class = "btn btn-default" type="reset" id="button" onclick="reset" value="Cancel">
+                          <b>Cancel</b> 
+               </button>  
+
+          </td>     
+        </tr> 
+      </table>
+    </form>
+  </section>
+  
+</div>
+
+</body>
+</html>

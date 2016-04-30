@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="SCO Login">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="akshaytalathi" />
+		<script src="js/quiz.js"></script>
+		<title>Score Card</title>
+		
+		
+		<style type="text/css">
+			.name {
+				text-align: center;
+				}
+
+			.container {
+				margin: auto;
+				width: 80%;
+				border: 3px;
+				border-style: solid;
+			}
+
+							.dropbtn {
+				    background-color: #4CAF50;
+				    color: white;
+				    padding: 16px;
+				    font-size: 16px;
+				    border: none;
+				    cursor: pointer;
+				}
+
+				.dropbtn:hover, .dropbtn:focus {
+				    background-color: #3e8e41;
+				}
+
+				.dropdown {
+				    position: relative;
+				    display: inline-block;
+				}
+
+				.dropdown-content {
+				    display: none;
+				    position: absolute;
+				    background-color: #f9f9f9;
+				    min-width: 160px;
+				    overflow: auto;
+				    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				}
+
+				.dropdown-content a {
+				    color: black;
+				    padding: 12px 16px;
+				    text-decoration: none;
+				    display: block;
+				}
+
+				.dropdown a:hover {background-color: #f1f1f1}
+
+				.show {display:block;}
+			
+		</style>
+
+
+		<script type="text/javascript">
+
+			function End() {
+				window.location.href = 'login.html';
+			}
+
+
+
+		</script>
+	</head>
+
+	<body  onload="scoreGenerator()">
+		<div id="question" class="container">
+			<header>
+				<center>
+				<h2>
+					Score Card
+				</h2>
+				<center>
+			</header>
+			
+			<div class="wrapper">			
+				<section class="summary-section">
+					<p>Total Score: <span id="total_score"></span></p>
+					<details>
+					  <summary>Quantitative Section</summary>
+					  <p>Number of Questions Answered : <span id="quant_count"></span></p>
+					  <p>Number of Correct Answers : <span id="quant_correct"></span></p>
+					  <p>Score : <span id="quant_score"></span></p>
+					</details>
+					
+					<details>
+					  <summary>Reading Section</summary>
+					  <p>Number of Questions Answered : <span id="verbal_count"></span></p>
+					  <p>Number of Correct Answers : <span id="verbal_correct"></span></p>
+					  <p>Score : <span id="verbal_score"></span></p>
+					</details>
+					
+					<details>
+					  <summary>Audio/Video Section</summary>
+					  <p>Number of Questions Answered : <span id="video_count"></span></p>
+					  <p>Number of Correct Answers : <span id="video_correct"></span></p>
+					  <p>Score : <span id="video_score"></span></p>
+					</details>
+
+				</section>
+			</div>
+			
+			<footer id="score-footer">
+				<p><center>
+					<h1> Thank You!!</h1>
+					<button type="button" name="submit" onclick="End()">End</button>
+				</center>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>

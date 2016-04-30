@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Login Page">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="author" content="akshaytalathi"/>
+        <script src="js/quiz.js"></script>
+
+        <title>Login Page</title>
+
+
+
+
+        <style>
+                .center {
+                        margin: auto;
+                        width: 60%;
+                        border: 3px;
+                        border-style: solid;
+                        padding: 10px;
+                }
+                .left {
+                        float: left;
+                        width: 50%;
+                }
+                .right {
+                        float: right;
+                        width: 50%;
+                }
+                #login.container {
+                        width: 100%;
+                        position: relative;
+                }
+        </style>
+
+
+
+</head>
+
+<body>
+        <div id="login" class="container">
+                <center>
+                        <h1>User Login</h1>
+                </center>
+                <div class="center">
+
+
+                        <!--     <form action="login()"> -->
+                        <ul>
+                                <li>
+                                        <center>
+                                                Username :
+                                                <input
+                                                type="text"
+                                                name="username"
+                                                required>
+                                        </center>
+                                </li>
+                                <br>
+                                <li>
+                                        <center>
+                                                Password :
+                                                <input
+                                                type="password"
+                                                name="password"
+                                                required>
+                                        </center>
+                                </li>
+                                <br>
+                                <section class="left">
+                                        <ul>
+                                                <a
+                                                href="#">
+                                                Create Account/ Forgot?
+                                                        </a>
+                                </section>
+                                <section class="right">
+    
+
+                                <input type="submit" name="submit" value="login"onclick="login()">
+                                        &nbsp;
+                                        <input type="reset">
+                                </section>
+                                </ul>
+                                <!--  </form> -->
+                </div>
+
+
+
+        </div>
+</body>
+<script type="text/javascript">
+        function login()
+        {
+
+                window.location.href = 'question1.html';
+
+        }
+</script>
+
+
+
+</html>
+
+

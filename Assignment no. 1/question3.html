@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="SCO Login">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="akshaytalathi" />
+		
+		<title>Question 3</title>
+		<script src="js/quiz.js"></script>
+		<style type="text/css">
+       .wrapper {
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            height: 350px;
+            background-color: white;
+        }
+
+        .name {
+                        text-align: center;
+                }
+                .container {
+                        margin: auto;
+                        width: 80%;
+                        border: 3px;
+                        border-style: solid;
+                }
+                .left {
+                        margin: inherit;
+                        float: left;
+                        width: 50%;
+                }
+                .right {
+                        float: right;
+                        width: 50%;
+                }
+
+
+</style>
+	</head>
+
+	<body>
+		<div id="question" class="container">
+			<header>
+				<center>
+				<h2>
+					Question 3
+				</h2>
+			</center>
+			</header>
+			
+				<section class="left">
+					<form class="form-2" method="get">
+						
+								<legend>
+								As per the latest Twitter news, complete the article snippet given by selecting appropriate choices for the blanks
+								</legend>
+								<data id="rightAnswer1" value="a"></data>
+								<div>
+									<input type="radio" name="blank1" value="$650" onclick="markBlank1()">
+										Option 1 Mark 1 : $650
+									</input>
+								</div>
+								<br/>
+								<div>
+									<input type="radio" name="blank1" value="$550" onclick="markBlank1()">
+										Option 2 Mark 1 : $550
+									</input>
+								</div>
+								<br/>
+								<div>
+									<input type="radio" name="blank1" value="$750" onclick="markBlank1()">
+										Option 3 Mark 1 : $750
+									</input>
+								</div>
+								<br/><br/>
+								
+								<data id="rightAnswer2" value="a"></data>
+								<div>
+									<input type="radio" name="blank2" value="Twitter" onclick="markBlank2()">
+										Option 1 Mark 2 : Twitter
+									</input>
+								</div>
+								<br/>
+								<div stlye="height: 150px;">
+									<input type="radio" name="blank2" value="Google" onclick="markBlank2()">
+										Option 2 Mark 2 : Google
+									</input>
+								</div>
+								<br/>
+								<div>
+									<input type="radio" name="blank2" value="Facebook" onclick="markBlank2()">
+										Option 3 Mark 2 : Facebook
+									</input>
+								</div>
+						
+					</form>
+					<br>
+					<p >
+					<button type="button" name="submit" onclick="checkCorrectAnswer3()">Submit & Next Question</button>
+				
+					<button type="reset" name="reset">Cancel & Clear Selection</button>
+				</p>
+				</section>
+				<section class="right">
+					<p class="content">
+						" Twitter wants more cash. The company announced two <!-- <mark id="fill1">$__________</mark>  --><span id="fill1"style= "background-color: #ffffcc">$______</span>million debt offerings in a filing today, each with a potential $100 increase provided that the sales are oversubscribed. Assuming full tip, including the $100 million boosters, <!-- <mark id="fill2">_____________</mark> --> 
+						<span id="fill2"style= "background-color: #ffffcc">_____________</span>
+						will rise up to $1.5 billion with the two offerings. "
+						<br/><br/>
+						<em>Source : http://techcrunch.com/2014/09/10/twitter-to-rise-up-to-1.5b-in-debt-offering/</em>
+					</p>
+				</section>
+			
+			
+				
+			
+		</div>
+	</body>
+</html>
