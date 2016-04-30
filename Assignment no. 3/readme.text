@@ -1,6 +1,7 @@
 Running Application :- 
 1. Go to application folder
-2. Run - node app.js
-3. Go to : http://127.0.0.1:3000/
+2. npm update
+3. node app.js
+4. Go to : http://127.0.0.1:3000/
 
 ## In this assignment, I created Registration Form using image captcha
